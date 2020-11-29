@@ -1,7 +1,5 @@
 package com.dhaaaga.musetoday;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,16 +37,18 @@ public class MainActivity extends AppCompatActivity {
             b1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    String n  = ed1.getText().toString();
+                    String n = ed1.getText().toString();
 
 
                     SharedPreferences.Editor editor = sharedpreferences.edit();
 
                     editor.putString(usernamekey, n);
                     editor.commit();
-                    Toast.makeText(MainActivity.this,"Welcome!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Welcome!", Toast.LENGTH_LONG).show();
 
-                  //  Intent i = new Intent(MainActivity.this,)
+                    Intent i = new Intent(MainActivity.this, Home.class);
+                    startActivity(i);
+
 
                 }
             });
