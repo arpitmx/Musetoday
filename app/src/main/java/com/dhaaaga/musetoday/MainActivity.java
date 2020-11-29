@@ -13,8 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText ed1,ed2,ed3;
+    EditText ed1;
     Button b1;
+    Button b2;
 
     public static final String MyPREFERENCES = "mypref" ;
     public static final String usernamekey = "username" ;
@@ -31,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
             ed1=(EditText)findViewById(R.id.etext1);
 
 
-            b1=(Button)findViewById(R.id.nxtbtn);
-            sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        b1 = (Button) findViewById(R.id.nxtbtn);
+        b2 = (Button) findViewById(R.id.nxtbtn2);
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
             b1.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -43,8 +45,9 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = sharedpreferences.edit();
 
                     editor.putString(usernamekey, n);
-                    editor.commit();
+                    editor.apply();
                     Toast.makeText(MainActivity.this, "Welcome!", Toast.LENGTH_LONG).show();
+
 
                     Intent i = new Intent(MainActivity.this, Home.class);
                     startActivity(i);
@@ -52,12 +55,15 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
-        }
 
-
-
-
-
-
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Home.class));
+            }
+        });
 
     }
+
+
+}

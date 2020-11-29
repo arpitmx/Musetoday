@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/id"
-        android:layout_width="155dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="155dp"
         android:layout_marginBottom="159dp"
         android:fontFamily="sans-serif-black"
@@ -47,6 +47,19 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etext1"
-        app:layout_constraintVertical_bias="0.819" />
+        app:layout_constraintVertical_bias="0.457" />
+
+    <Button
+        android:id="@+id/nxtbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:text="Already"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etext1"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
