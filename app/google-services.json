@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "535067991045",
+    "firebase_url": "https://streamdog-b2ee9.firebaseio.com",
+    "project_id": "streamdog-b2ee9",
+    "storage_bucket": "streamdog-b2ee9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535067991045:android:e41967f72cc901aa3a106c",
+        "android_client_info": {
+          "package_name": "com.dhaaaga.musetoday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535067991045-pcg4450g5vis1eb0trbptidldk4mc1h0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj94J6ap1DdgjJOAXZ6fmzRl1QaB8ap0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535067991045-pcg4450g5vis1eb0trbptidldk4mc1h0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
